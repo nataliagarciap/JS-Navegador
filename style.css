@@ -1,0 +1,145 @@
+:root {
+    --color-primary: rgb(169, 171, 142);
+    --color-secondary: #f4f4f4
+    ;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(169, 171, 142);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+    margin: 50px auto;
+    width: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f1e8e8;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+h3 {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding-bottom: 15px;
+    margin: 60px 0 10px;
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.caja-ingresos-gastos {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.caja-ingresos-gastos > div {
+    flex: 2;
+    text-align: center;
+}
+
+.caja-ingresos-gastos > div:first-of-type {
+    border-right: 1px solid #000000;
+}
+
+.money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.ingreso {
+    color: #000000;
+}
+
+.gasto {
+    color: #000000;
+}
+
+
+
+input[type='text'],
+input[type='number'] {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 22px;
+    
+}
+
+.boton {
+    cursor: pointer;
+    background-color: #75886a;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 26px;
+    margin: 10px 0 30px;
+    padding: 12px;
+    width: 100%;
+}
+
+.boton:focus,
+.delete-boton:focus {
+    outline: 0;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.list li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.form-class {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding-bottom: 15px;
+    margin: 60px 0 10px;
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+
+.borrar-boton {
+    cursor: pointer;
+    background-color: #73716b;
+    border: 0;
+    
+
+}
